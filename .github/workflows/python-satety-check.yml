@@ -5,6 +5,9 @@ author: aufdenpunkt
 jobs:
  run in the workflow
   runs-on: ubuntu-latest
+   steps:
+      - uses: actions/checkout@v2
+      -name: check the security of python source code
 inputs:
   safety_args:
     description: Optional Safety script parameters. (e.g. --ignore=1234 or -i 1234)
