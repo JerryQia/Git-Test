@@ -15,16 +15,3 @@ jobs:  								# gather all the jobs that run in the workflow
         run: |
            echo 'Viewing the file: '   
            cat requirements.txt 
-	
-      - name: python safety check           # Step 4：Python Safety Check
-	
-inputs:
-  safety_args:
-    description: Optional Safety script parameters. (e.g. --ignore=1234 or -i 1234)
-    default: ''
-  scan_requirements_file_only:
-    description: Set true to scan required python packages without installing them.
-    default: 'false'
-branding:
-  icon: 'shield'
-  color: 'green'
